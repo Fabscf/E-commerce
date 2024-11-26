@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{
+		})
+		<main class="page">
+			<section class="page__shop shop">
+				<div class="shop__header">
+					<nav class="shop__breadcrumbs breadcrumbs" aria-label="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="home.html" class="breadcrumbs__link">Home</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="shop__text">
+						<h1 class="shop__title">Shop Page</h1>
+						<p class="shop__subtitle">Let’s design the place you always imagined.</p>
+					</div>
+				</div>
+				<div class="shop__container">
+					<div class="shop__filter filter">
+						<h3 class="filter__title">
+							<img src="@img/svg/filter.svg" alt="filter">
+							Filter
+						</h3>
+						<div class="filter__category category-filter">
+							<h4 class="category-filter__title">CATEGORIES</h4>
+							<div class="category-filter__block" id="category-filter">
+								<div class="category-filter__item">
+									<span class="category-filter__link category-filter__link_active">All Rooms</span>
+								</div>
+								<div class="category-filter__item">
+									<span class="category-filter__link">Living Room</span>
+								</div>
+								<div class="category-filter__item"><span class="category-filter__link">Bedroom</span>
+								</div>
+								<div class="category-filter__item"><span class="category-filter__link">Kitchen</span>
+								</div>
+								<div class="category-filter__item"><span class="category-filter__link">Bathroom</span>
+								</div>
+								<div class="category-filter__item"><span class="category-filter__link">Dinning</span>
+								</div>
+								<div class="category-filter__item"><span class="category-filter__link">Outdoor</span>
+								</div>
+							</div>
+						</div>
+						<div class="filter__price price-filter">
+							<h4 class="price-filter__title">PRICE</h4>
+							<div class="price-filter__block options" id="price-filter">
+								<div class="price-filter__item options__item">
+									<input hidden id="o_1" class="price-filter__input options__input" checked
+										type="radio" value="All" name="option">
+									<label for="o_1" class="price-filter__label options__label"><span
+											class="options__text">All Price</span></label>
+								</div>
+								<div class="price-filter__item options__item">
+									<input hidden id="o_2" class="price-filter__input options__input" type="radio"
+										value="0.00 - 99.99" name="option">
+									<label for="o_2" class="price-filter__label options__label"><span
+											class="options__text">$0.00 - 99.99</span></label>
+								</div>
+								<div class="price-filter__item options__item">
+									<input hidden id="o_3" class="price-filter__input options__input" type="radio"
+										value="100.00 - 199.99" name="option">
+									<label for="o_3" class="price-filter__label options__label"><span
+											class="options__text">$100.00 - 199.99</span></label>
+								</div>
+								<div class="price-filter__item options__item">
+									<input hidden id="o_4" class="price-filter__input options__input" type="radio"
+										value="200.00 - 299.99" name="option">
+									<label for="o_4" class="price-filter__label options__label"><span
+											class="options__text">$200.00 - 299.99</span></label>
+								</div>
+								<div class="price-filter__item options__item">
+									<input hidden id="o_5" class="price-filter__input options__input" type="radio"
+										value="300.00 - 399.99" name="option">
+									<label for="o_5" class="price-filter__label options__label"><span
+											class="options__text">$300.00 - 399.99</span></label>
+								</div>
+								<div class="price-filter__item options__item">
+									<input hidden id="o_6" class="price-filter__input options__input" type="radio"
+										value="400+" name="option">
+									<label for="o_6" class="price-filter__label options__label"><span
+											class="options__text">$400.00+</span></label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="shop__catalog catalog-shop">
+						<div class="catalog-shop__header">
+							<h4 class="catalog-shop__title">All Rooms</h4>
+							<div class="catalog-shop__wrapper">
+								<div data-spollers class="catalog-shop__sort sort">
+									<span class="sort__span" data-spoller>Sort by
+										<img class="sort__spoller-arrow" src="@img/svg/arrows/arrow-bottom.svg">
+									</span>
+									<ul class="sort__list">
+										<li class="sort__item">
+											<div class="sort__button" id="sort_button-price">Price
+												<img class="sort__arrow sort__none"
+													src="@img/svg/arrows/arrow-bottom_grey.svg" alt="">
+											</div>
+										</li>
+										<li class="sort__item">
+											<div class="sort__button" id="sort_button-popular">Popular
+												<img class="sort__arrow sort__none"
+													src="@img/svg/arrows/arrow-bottom_grey.svg" alt="">
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="catalog-shop__body" id="catalog-shop__body">
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

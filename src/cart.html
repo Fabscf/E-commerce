@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="page__cart cart">
+                <div class="cart__container">
+                    <div class="cart__inner">
+                        <h1 class="cart__title">Cart</h1>
+                        <ul class="cart__steps steps-cart">
+                            <li class="steps-cart__item steps-cart__item--active">
+                                <div class="steps-cart__number steps-cart__number--active"><span>1</span></div>
+                                <p class="steps-cart__text steps-cart__text--active">Shopping cart</p>
+                            </li>
+                            <li class="steps-cart__item">
+                                <div class="steps-cart__number"><span>2</span></div>
+                                <p class="steps-cart__text">Checkout details</p>
+                            </li>
+                            <li class="steps-cart__item">
+                                <div class="steps-cart__number"><span>3</span></div>
+                                <p class="steps-cart__text">Order complete</p>
+                            </li>
+                        </ul>
+                        <div class="cart__body" data-step="1" id="cart-body">
+                            <div class="cart__step-1 cart-step">
+                                <div class="cart__body-products products-body">
+                                    <ul class="products-body__title-items">
+                                        <li class="products-body__title-item">
+                                            <p class="products-body__title-link">Product</p>
+                                        </li>
+                                        <li class="products-body__title-item">
+                                            <p class="products-body__title-link">Quantity</p>
+                                        </li>
+                                        <li class="products-body__title-item">
+                                            <p class="products-body__title-link">Price</p>
+                                        </li>
+                                        <li class="products-body__title-item">
+                                            <p class="products-body__title-link">Subtotal</p>
+                                        </li>
+                                    </ul>
+                                    <div class="products-body__items cart-items__wrapper" id="step-items-1">
+
+                                    </div>
+                                    <div class="products-body__coupon coupon-body">
+                                        <h6 class="coupon-body__title">Have a coupon?</h6>
+                                        <p class="coupon-body__info">Add your code for an instant cart discount</p>
+                                        <form class="coupon-body__form"="#">
+                                            <img src="@img/svg/coupon.svg" alt="coupon">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="Coupon Code" class="coupon-body__input">
+                                            <button type="button" class="coupon-body__button">Apply</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="cart__body-total total-body">
+                                    <div class="total-body__inner">
+                                        <h5 class="total-body__title">Cart summary</h5>
+                                        <div class="options total-body__options">
+                                            <div class="options__item">
+                                                <input hidden id="o_1" class="options__input total-body__input" checked
+                                                    type="radio" value="1" name="option">
+                                                <label for="o_1" class="options__label total-body__label"><span
+                                                        class="options__text">Free
+                                                        shipping</span><span class="options__text">$0.00</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_2" class="options__input total-body__input"
+                                                    type="radio" value="2" name="option">
+                                                <label for="o_2" class="options__label total-body__label"><span
+                                                        class="options__text">Express
+                                                        shipping</span><span
+                                                        class="options__text">+$15.00</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_3" class="options__input total-body__input"
+                                                    type="radio" value="3" name="option">
+                                                <label for="o_3" class="options__label total-body__label"><span
+                                                        class="options__text">Pick
+                                                        Up</span><span class="options__text">%21.00</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="total-body__subtotal-block">
+                                            <p class="total-body__subtotal-text">Subtotal</p>
+                                            <p class="total-body__subtotal-price cart__subtotal-price">$1234.00</p>
+                                        </div>
+                                        <div class="total-body__total-block">
+                                            <p class="total-body__total-text">Total</p>
+                                            <p class="total-body__total-price cart__total-price">$1345.00</p>
+                                        </div>
+                                        <button type="button" class="total-body__button" id="to-step-2"><span
+                                                class="total-body__button-text">Checkout</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__step-2 cart-step">
+                                <div class="cart__step-2-wrapper">
+                                    <form action="#" class="cart__body-checkout-details checkout-details"
+                                        id="cart-form">
+                                        <h2 class="contact__form-title title-cart">Contact Infomation</h2>
+                                        <div class="checkout-details__contact contact form-detail">
+                                            <div class="contact__wrapper">
+                                                <label for="firstName" class="contact__label">First name</label>
+                                                <input type="text" name="form[]" data-error="Ошибка"
+                                                    placeholder="First name" class="contact__input input-cart"
+                                                    id="firstName" autocomplete="off">
+                                            </div>
+                                            <div class="contact__wrapper">
+                                                <label for="lastName" class="contact__label">Last name</label>
+                                                <input type="text" name="form[]" data-error="Ошибка"
+                                                    placeholder="Last name" class="contact__input input-cart"
+                                                    id="lastName" autocomplete="off">
+                                            </div>
+                                            <div class="contact__wrapper">
+                                                <label for="phoneNumber" class="contact__label">Phone Number</label>
+                                                <input type="number" name="form[]" data-error="Ошибка"
+                                                    placeholder="Phone Number" class="contact__input input-cart"
+                                                    id="phoneNumber" autocomplete="off">
+                                            </div>
+                                            <div class="contact__wrapper">
+                                                <label for="email" class="contact__label">Email Address</label>
+                                                <input type="email" name="form[]" data-error="Ошибка"
+                                                    placeholder="Your Email" class="contact__input input-cart"
+                                                    id="email" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <h2 class="address__title title-cart">Shipping Address</h2>
+                                        <div class="checkout-details__address address form-detail">
+                                            <div class="address__inner">
+                                                <div class="address__wrapper">
+                                                    <label for="address" class="address__label">Street Address *</label>
+                                                    <input type="text" name="form[]" data-error="Ошибка"
+                                                        placeholder="Street Address" class="address__input input-cart"
+                                                        id="address" autocomplete="off">
+                                                </div>
+                                                <div class="address__wrapper">
+                                                    <label for="country" class="address__label">Country *</label>
+                                                    <input type="text" name="form[]" data-error="Ошибка"
+                                                        placeholder="Country" class="address__input input-cart"
+                                                        id="country" autocomplete="off">
+                                                </div>
+                                                <div class="address__wrapper">
+                                                    <label for="city" class="address__label">Town / City *</label>
+                                                    <input type="text" name="form[]" data-error="Ошибка"
+                                                        placeholder="Town / City" class="address__input input-cart"
+                                                        id="city" autocomplete="off">
+                                                </div>
+                                                <div class="address__wrapper">
+                                                    <label for="state" class="address__label">State</label>
+                                                    <input type="text" name="form[]" data-error="Ошибка"
+                                                        placeholder="State" class="address__input input-cart" id="state"
+                                                        autocomplete="off">
+                                                </div>
+                                                <div class="address__wrapper">
+                                                    <label for="zipCode" class="address__label">Zip Code</label>
+                                                    <input type="text" name="form[]" data-error="Ошибка"
+                                                        placeholder="Zip Code" class="address__input input-cart"
+                                                        id="zipCode" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="checkbox address__checkbox">
+                                                <input id="c_1" data-error="Ошибка"
+                                                    class="checkbox__input address__input-checkbox" type="checkbox"
+                                                    value="1" name="form[]">
+                                                <label for="c_1" class="checkbox__label address__label-checkbox"><span
+                                                        class="checkbox__text address__text-checkbox">Use a
+                                                        different billing address (optional)</span></label>
+                                            </div>
+                                        </div>
+                                        <h2 class="payment__title title-cart">Payment method</h2>
+                                        <div class="checkout-details__payment payment form-detail">
+                                            <div class="options payment__options">
+                                                <div class="options__item payment__item-option">
+                                                    <input hidden id="cardCredit"
+                                                        class="options__input payment__input-option" checked
+                                                        type="radio" value="1" name="option" autocomplete="off">
+                                                    <label for="cardCredit"
+                                                        class="options__label payment__label-option"><span
+                                                            class="options__text payment__text-option">Pay
+                                                            by Card Credit</span>
+                                                        <img src="@img/svg/money.svg" alt="money" autocomplete="off">
+                                                    </label>
+                                                </div>
+                                                <div class="options__item payment__item-option">
+                                                    <input hidden id="payPal"
+                                                        class="options__input payment__input-option" type="radio"
+                                                        value="2" name="option" autocomplete="off">
+                                                    <label for="payPal"
+                                                        class="options__label payment__label-option"><span
+                                                            class="options__text payment__text-option">Paypal</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="payment__inner">
+                                                <div class="payment__wrapper">
+                                                    <label for="cardNumber" class="payment__label">Card Number</label>
+                                                    <input type="number" name="form[]" data-error="Ошибка"
+                                                        placeholder="1234 1234 1234" class="payment__input input-cart"
+                                                        id="cardNumber">
+                                                </div>
+                                                <div class="payment__wrapper">
+                                                    <label for="date" class="payment__label">Expiration date</label>
+                                                    <input type="text" name="form[]" pattern="\d{2}/\d{4}" maxlength="7"
+                                                        data-error="Ошибка" placeholder="MM/YY"
+                                                        class="payment__input input-cart" id="date">
+                                                </div>
+                                                <div class="payment__wrapper">
+                                                    <label for="cvvCode" class="payment__label">CVC</label>
+                                                    <input type="number" name="form[]" data-error="Ошибка"
+                                                        placeholder="CVC Code" class="payment__input input-cart"
+                                                        id="cvvCode">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="checkout-details__button"
+                                            id="to-step-3"><span>Place
+                                                Order</span></button>
+                                    </form>
+                                    <div class="cart__body-order-summary order-summary">
+                                        <h2 class="order-summary__title">Order summary</h2>
+                                        <div class="order-summary__items cart-items__wrapper" id="step-items-2">
+                                        </div>
+                                        <div class="order-summary__shipping-block block-shipping">
+                                            <p class="block-shipping__text">Shipping</p>
+                                            <p class="block-shipping__price">Free</p>
+                                        </div>
+                                        <div class="order-summary__subtotal-block block-subtotal">
+                                            <p class="block-subtotal__text">Subtotal</p>
+                                            <p class="block-subtotal__price">$99.00</p>
+                                        </div>
+                                        <div class="order-summary__total-block block-total">
+                                            <p class="block-total__text">Total</p>
+                                            <p class="block-total__price">$234.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__step-3 cart-step">
+                                <div class="cart__body-completed completed-body">
+                                    <h4 class="completed-body__gratitude">Thank you! 🎉</h4>
+                                    <h2 class="completed-body__title">Your order has been received</h2>
+                                    <div class="completed-body__items cart-items__wrapper" id="step-items-3">
+                                    </div>
+                                    <div class="completed-body__info completed-info">
+                                        <div class="completed-info__label">Order code:</div>
+                                        <div class="completed-info__value">#0123_45678</div>
+                                        <div class="completed-info__label">Date:</div>
+                                        <div class="completed-info__value">October 19, 2023</div>
+                                        <div class="completed-info__label">Total:</div>
+                                        <div class="completed-info__value">$1,345.00</div>
+                                        <div class="completed-info__label">Payment method:</div>
+                                        <div class="completed-info__value">Credit Card</div>
+                                    </div>
+                                    <a href="shop.html" class="completed-body__button">
+                                        Go catalog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

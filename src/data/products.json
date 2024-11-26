@@ -1,0 +1,168 @@
+[
+    {
+        "id": 1,
+        "title": "Loveseat Sofa",
+        "description": "Easy transportation was the goal when we created this comfy loveseat with durable beige polyester fabric.",
+        "post": 199.99,
+        "prevPost": 399.99,
+        "category": "Living Room",
+        "articul": 9179,
+        "color": [
+            "../../img/product/black.png",
+            "../../img/product/white.png",
+            "../../img/product/red.png",
+            "../../img/product/grey.png"
+        ],
+        "dataColor": [
+            "black",
+            "white",
+            "red",
+            "grey"
+        ],
+        "image": "../../img/products/1.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Light Beige Pillow",
+        "description": "Super-soft cushion cover in off-white with a tactile pattern that enhances the different tones in the pile and base.",
+        "post": 17.99,
+        "prevPost": 53.99,
+        "category": "Bedroom",
+        "articul": 3076,
+        "color": [
+            "../../img/product/black.png",
+            "../../img/product/white.png",
+            "../../img/product/red.png"
+        ],
+        "dataColor": [
+            "black",
+            "white",
+            "red"
+        ],
+        "image": "../../img/products/2.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "White Drawer unit",
+        "description": "Super-soft cushion cover in off-white with a tactile pattern that enhances the different tones in the pile and base.",
+        "post": 89.99,
+        "prevPost": 179.99,
+        "category": "Kitchen",
+        "articul": 5223,
+        "color": [
+            "../../img/product/black.png"
+        ],
+        "dataColor": [
+            "black"
+        ],
+        "image": "../../img/products/3.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Bamboo Basket",
+        "description": "With its soft shape and color, this spacious basket is just as decorative wherever you choose to put it.",
+        "post": 59.99,
+        "prevPost": 319.99,
+        "category": "Bathroom",
+        "articul": 4022,
+        "color": [
+            "../../img/product/black.png",
+            "../../img/product/grey.png"
+        ],
+        "dataColor": [
+            "black",
+            "grey"
+        ],
+        "image": "../../img/products/4.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "Black Tray table",
+        "description": "Easy to love at a price that’s hard to resist. Buy one or buy a few and make every space where you sit more convenient.",
+        "post": 209.99,
+        "prevPost": 399.99,
+        "category": "Dinning",
+        "articul": 1419,
+        "color": [
+            "../../img/product/red.png",
+            "../../img/product/grey.png"
+        ],
+        "dataColor": [
+            "red",
+            "grey"
+        ],
+        "image": "../../img/products/5.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "Table lamp",
+        "description": "Like small jewels in shiny brass and gray clear glass, pread a soft mood light that creates exciting shadows on walls and ceilings",
+        "post": 149.99,
+        "prevPost": 439.99,
+        "category": "Outdoor",
+        "articul": 5582,
+        "color": [
+            "../../img/product/grey.png"
+        ],
+        "dataColor": [
+            "grey"
+        ],
+        "image": "../../img/products/6.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "White Drawer unit",
+        "description": "Super-soft cushion cover in off-white with a tactile pattern that enhances the different tones in the pile and base.",
+        "post": 89.99,
+        "prevPost": 199.99,
+        "category": "Outdoor",
+        "articul": 5081,
+        "color": [
+            "../../img/product/black.png",
+            "../../img/product/white.png",
+            "../../img/product/red.png",
+            "../../img/product/grey.png"
+        ],
+        "dataColor": [
+            "black",
+            "white",
+            "red",
+            "grey"
+        ],
+        "image": "../../img/products/7.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Table lamp",
+        "description": "Like small jewels in shiny brass and gray clear glass, pread a soft mood light that creates exciting shadows on walls and ceilings",
+        "post": 149.99,
+        "prevPost": 439.99,
+        "category": "Outdoor",
+        "articul": 5257,
+        "color": [
+            "../../img/product/black.png"
+        ],
+        "dataColor": [
+            "black"
+        ],
+        "image": "../../img/products/8.jpeg"
+    },
+    {
+        "id": 9,
+        "title": "Table lamp",
+        "description": "Like small jewels in shiny brass and gray clear glass, pread a soft mood light that creates exciting shadows on walls and ceilings",
+        "post": 149.99,
+        "prevPost": 439.99,
+        "category": "Outdoor",
+        "articul": 7231,
+        "color": [
+            "../../img/product/red.png",
+            "../../img/product/grey.png"
+        ],
+        "dataColor": [
+            "red",
+            "grey"
+        ],
+        "image": "../../img/products/9.jpeg"
+    }
+]

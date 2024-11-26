@@ -1,0 +1,269 @@
+.shop {
+    margin-bottom: rem(100);
+
+    // .shop__header
+    &__header {
+        background: url('@img/shop/shop-bg.jpeg') center / cover no-repeat;
+        height: 392px;
+        padding: rem(115) 0px 0px 0px;
+        margin: 0px 0px rem(60) 0px;
+    }
+
+    // .shop__breadcrumbs
+    &__breadcrumbs {
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    // .shop__container
+    &__container {}
+
+    // .shop__text
+    &__text {
+        text-align: center;
+    }
+
+    // .shop__title
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+            font-family: "Poppins";
+            font-size: rem(54);
+            line-height: math.div(58, 54);
+            letter-spacing: rem(1);
+        }
+    }
+
+    // .shop__subtitle
+    &__subtitle {}
+
+    // .shop__container
+    &__container {
+        display: grid;
+        align-items: start;
+        gap: rem(24);
+        grid-template-columns: rem(262) 1fr;
+    }
+
+    // .shop__filter
+    &__filter {
+        max-width: rem(268);
+        display: grid;
+        gap: rem(32);
+    }
+
+    // .shop__catalog
+    &__catalog {}
+}
+
+.filter {
+    font-weight: 600;
+    color: rgb(18, 18, 18);
+
+    // .filter__title
+    &__title {
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: math.div(32, 20);
+        display: flex;
+        align-items: center;
+
+        img {
+            padding: 0px rem(8) 0px 0px;
+        }
+    }
+
+    // .filter__category
+    &__category {}
+
+    // .filter__price
+    &__price {}
+}
+
+.category-filter {
+
+    // .category-filter__title
+    &__title {
+        line-height: math.div(16, 26);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .category-filter__block
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+    }
+
+    // .category-filter__item
+    &__item {
+        cursor: pointer;
+    }
+
+    // .category-filter__link
+    &__link {
+        font-size: rem(14);
+        line-height: math.div(22, 14);
+        color: rgb(128, 126, 126);
+
+        &_active {
+            color: rgb(18, 18, 18);
+            border-bottom: 1px solid rgb(18, 18, 18);
+            padding: 0px 0px rem(2) 0px;
+        }
+    }
+}
+
+.price-filter {
+    width: 100%;
+
+    // .price-filter__title
+    &__title {
+        line-height: math.div(16, 26);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .price-filter__block
+    &__block {}
+
+    // .price-filter__form
+    &__form {}
+
+    // .price-filter__checkbox
+    &__checkbox {}
+
+    // .price-filter__checkbox-input
+    &__checkbox-input {}
+}
+
+.catalog-shop {
+
+    // .catalog-shop__header
+    &__header {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    // .catalog-shop__title
+    &__title {
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: math.div(32, 20);
+
+    }
+
+    // .catalog-shop__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: auto;
+        gap: rem(32);
+    }
+
+    // .catalog-shop__sort
+    &__sort {}
+
+    // .catalog-shop__view
+    &__view {}
+
+    // .catalog-shop__body
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, rem(262));
+        justify-content: center;
+        @include adaptiveValue("gap", 38, 10);
+    }
+
+    // .catalog-shop__item
+    &__item {
+        max-width: rem(262);
+        max-height: rem(433);
+    }
+}
+
+
+.sort {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease 0s;
+
+    // .sort__span
+    &__span {
+        font-weight: 600;
+        line-height: math.div(26, 16);
+        color: rgb(18, 18, 18);
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+    }
+
+    // .sort__arrow
+    &__spoller-arrow {
+        transition: transform 0.5s ease 0s;
+
+        &_active {
+            transform: rotate(-180deg);
+        }
+    }
+
+
+
+
+    // .sort__list
+    &__list {
+        position: absolute;
+        top: rem(30);
+        z-index: 2;
+    }
+
+    // .sort__item
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(8);
+        }
+    }
+
+    // .sort__button
+    &__button {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    // .sort__arrow
+    &__arrow {
+        position: absolute;
+        left: rem(60);
+        bottom: rem(-5);
+    }
+
+    // .sort__none
+    &__none {
+        display: none;
+    }
+}
+
+.view {
+    display: flex;
+    gap: rem(22);
+
+    // .view__button
+    &__button {}
+}
+
+.products {
+
+    // .products__card
+    &__card {}
+}

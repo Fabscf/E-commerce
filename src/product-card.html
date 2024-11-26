@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Карточка товара"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{
+		})
+		<main class="page">
+			<div class="product">
+				<div class="product__container">
+					<div class="product__inner" id="product-inner">
+					</div>
+					<div class="product__other other">
+						<div class="other__block">
+							<ul class="other__list">
+								<li class="other__item">
+									<button class="other__button"><span class="other__link">Additional
+											Info</span></button>
+								</li>
+								<li class="other__item">
+									<button class="other__button"><span class="other__link">Questions</span></button>
+								</li>
+								<li class="other__item">
+									<button class="other__button other__button_active"><span class="other__link other__link_active">Reviews</span></button>
+								</li>
+							</ul>
+						</div>
+						<div class="other__inner">
+							<h3 class="other__title">Customer Reviews</h3>
+							<div class="rating rating_set other__rating">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items other__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="other__rating-info">11 Reviews</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="other__info">Be the first to review <span>Tray Table</span>
+							</div>
+							<div class="other__new-review">
+								<form class="other__form">
+									<input autocomplete="off" type="text" name="form[]"
+										placeholder="Share your thoughts" class="other__input input">
+									<button type="button" class="other__form-button button">Write Review</button>
+								</form>
+							</div>
+							<div class="other__reviews reviews">
+								<h4 class="reviews__title">5 Reviews</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

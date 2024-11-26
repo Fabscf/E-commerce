@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="page__about about">
+                <div class="about__container">
+                    <div class="about__inner">
+                        <h1 class="about__title">
+                            We believe in sustainable decor. We’re passionate about life at home.
+                        </h1>
+                        <h6 class="about__subtitle">Our features timeless furniture, with natural fabrics, curved lines,
+                            plenty of mirrors and classic design, which can be incorporated into any decor project. The
+                            pieces enchant for their sobriety, to last for generations, faithful to the shapes of each
+                            period, with a touch of the present
+                        </h6>
+                        <div class="about__banner banner-about">
+                            <div class="banner-about__inner">
+                                <div class="banner-about__img">
+                                    <img src="@img/contact-about/about-image.png" alt="">
+                                </div>
+                                <div class="banner-about__right">
+                                    <h3 class="banner-about__title">About Us</h3>
+                                    <p class="banner-about__text">3legant is a gift & decorations store based in HCMC,
+                                        Vietnam. Est since 2019.
+                                        Our customer service is always prepared to support you 24/7</p>
+                                    <a href="" class="banner-about__button">Shop Now <img
+                                            src="@img/svg/arrows/arrow-right.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__contact">
+                            <div class="contact__inner">
+                                <h2 class="contact__title">Contact Us</h2>
+                                <div class="contact__articles articles-contact">
+                                    <div class="articles-contact__items">
+                                        <div class="articles-contact__item contact-articles-item">
+                                            <div class="contact-articles-item__img">
+                                                <img src="@img/contact-about/articles-about/1.svg" alt="">
+                                            </div>
+                                            <div class="contact-articles-item__name">Address</div>
+                                            <div class="contact-articles-item__info">
+                                                <a class="contact-articles-item__link"
+                                                    href="https://yandex.ru/maps/-/CDdgMF0e" target="_blank">234 Hai
+                                                    Trieu, Ho Chi Minh
+                                                    City,
+                                                    Viet Nam</a>
+                                            </div>
+                                        </div>
+                                        <div class="articles-contact__item contact-articles-item">
+                                            <div class="contact-articles-item__img">
+                                                <img src="@img/contact-about/articles-about/2.svg" alt="">
+                                            </div>
+                                            <div class="contact-articles-item__name">Contact Us</div>
+                                            <div class="contact-articles-item__info"><a
+                                                    class="contact-articles-item__link" href="tel:+84234567890">+84
+                                                    234 567 890</a></div>
+                                        </div>
+                                        <div class="articles-contact__item contact-articles-item">
+                                            <div class="contact-articles-item__img">
+                                                <img src="@img/contact-about/articles-about/3.svg" alt="">
+                                            </div>
+                                            <div class="contact-articles-item__name">Email</div>
+                                            <div class="contact-articles-item__info"><a
+                                                    class="contact-articles-item__link"
+                                                    href="mailto:hello@3legant.com">hello@3legant.com</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about__body">
+                                    <form class="about__form form-about" action="#">
+                                        <label class="form-about__label">Full Name</label>
+                                        <div class="form-about__input-body">
+                                            <input type="text" name="form[]" placeholder="Your Name"
+                                                class="form-about__input">
+                                        </div>
+                                        <label class="form-about__label">Email address</label>
+                                        <div class="form-about__input-body">
+                                            <input autocomplete="off" type="email" name="form[]"
+                                                placeholder="Your Email" class="form-about__input">
+                                        </div>
+                                        <label class="form-about__label">message</label>
+                                        <div class="form-about__input-body form-about__body-msg">
+                                            <input autocomplete="off" type="text" name="form[]"
+                                                placeholder="Your message" class="form-about__input">
+                                        </div>
+                                        <button type="submit" class="form-about__button"><span>Send
+                                                Message</span></button>
+                                    </form>
+                                    <div class="about__map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.96990009223208!2d106.70438503502352!3d10.771550823410113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f84666425a3%3A0x5fe555146fe21fc0!2sSeedcom%20Corp.%20Office!5e0!3m2!1sru!2suk!4v1729627924927!5m2!1sru!2suk"
+                                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__benefits benefits" style="background-color: rgb(243, 245, 247);">
+                            <div class="benefits__container" style="max-width: 1920px;">
+                                <div class="benefits__item">
+                                    <div class="benefits__image">
+                                        <img src="@img/svg/car.svg" alt="car">
+                                    </div>
+                                    <div class="benefits__body">
+                                        <h6 class="benefits__title">Free Shipping</h6>
+                                        <div class="benefits__text">Order above $200</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item">
+                                    <div class="benefits__image">
+                                        <img src="@img/svg/money.svg" alt="money">
+                                    </div>
+                                    <div class="benefits__body">
+                                        <h6 class="benefits__title">Money-back</h6>
+                                        <div class="benefits__text">30 days guarantee</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item">
+                                    <div class="benefits__image">
+                                        <img src="@img/svg/lock.svg" alt="lock">
+                                    </div>
+                                    <div class="benefits__body">
+                                        <h6 class="benefits__title">Secure Payments</h6>
+                                        <div class="benefits__text">Secured by Stripe</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item">
+                                    <div class="benefits__image">
+                                        <img src="@img/svg/phone.svg" alt="phone">
+                                    </div>
+                                    <div class="benefits__body">
+                                        <h6 class="benefits__title">24/7 Support</h6>
+                                        <div class="benefits__text">Phone and Email support</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+
+</html>

@@ -1,0 +1,668 @@
+.product {
+
+    // .product__container
+    &__container {}
+
+    // .product__inner
+    &__inner {
+        display: grid;
+        align-items: start;
+        margin-bottom: rem(40);
+        @include adaptiveValue("gap", 64, 16);
+
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+
+        @media (min-width:$mobile) {
+            grid-template-columns: percent(548, 1184) 1fr;
+        }
+    }
+
+    // .product__slider
+    &__slider {
+        width: 100% !important;
+    }
+
+    // .product__wrapper
+    &__wrapper {}
+
+    // .product__slide
+    &__slide {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        &:not(:last-child) {
+            margin-bottom: rem(23);
+        }
+
+        img {
+            width: 100%;
+            min-width: rem(320);
+            max-width: rem(488);
+            height: auto;
+            object-fit: contain;
+
+            @media (max-width:$mobile) {
+                min-width: rem(160);
+            }
+        }
+    }
+
+    // .product__thumbs
+    &__thumbs {}
+
+    // .product__body
+    &__body {}
+
+    // .product__rating
+    &__rating {
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .product__title
+
+    &__title {
+        font-family: "Poppins";
+        font-size: rem(40);
+        line-height: math.div(44, 40);
+        letter-spacing: rem(0.4);
+        color: rgb(20, 23, 24);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .product__description
+    &__description {
+        font-weight: 400;
+        line-height: math.div(26, 16);
+        color: rgb(108, 114, 117);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .product__block-post
+    &__block-post {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: rem(12);
+        font-family: "Poppins";
+
+        &:not(:last-child) {
+            margin-bottom: rem(48);
+        }
+    }
+
+    // .product__post
+    &__post {
+        font-size: rem(28);
+        line-height: math.div(34, 28);
+        letter-spacing: rem(0.6);
+        color: rgb(18, 18, 18);
+    }
+
+    // .product__prev-post
+    &__prev-post {
+        font-size: rem(20);
+        line-height: math.div(28, 20);
+        color: rgb(108, 114, 117);
+        text-decoration: line-through;
+    }
+
+    // .product__offer
+    &__offer {}
+
+    // .product__size
+    &__size {}
+
+    // .product__color
+    &__color {}
+
+    // .product__block
+    &__wish-block {
+        display: flex;
+        gap: rem(24);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .product__wish
+    &__wish {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(10);
+        max-width: rem(357);
+        height: rem(52);
+        width: 100%;
+        border: 1px solid rgb(20, 23, 24);
+        border-radius: rem(8);
+    }
+
+    // .product__wish-text
+    &__wish-text {
+        font-size: rem(18);
+        line-height: math.div(32, 18);
+        letter-spacing: rem(0.4);
+        color: rgb(20, 23, 24);
+    }
+
+    // .product__wish-img
+    &__wish-img_added {
+        display: none;
+    }
+
+    // .product__cart
+    &__cart {
+        width: 100%;
+        max-width: rem(508);
+        height: rem(52);
+        border-radius: rem(8);
+        font-size: rem(18);
+        line-height: math.div(32, 18);
+        letter-spacing: rem(0.4);
+        color: rgb(255, 255, 255);
+        background-color: rgb(20, 23, 24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(10);
+
+        &:not(:last-child) {
+            margin-bottom: rem(32);
+        }
+    }
+
+    // .product__cart-img
+    &__cart-img {
+        display: none;
+        margin: 0px 0px rem(2) 0px;
+    }
+
+    // .product__table
+    &__table {}
+}
+
+
+.thumbs-images {
+    @media (max-width:$mobile) {
+        display: none !important;
+    }
+
+    // .thumbs-images__wrapper
+    &__wrapper {}
+
+    // .thumbs-images__slide
+    &__slide {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.swiper-slide-thumb-active {
+    border: 2px solid rgb(20, 23, 24);
+}
+
+.table-product {
+    display: grid;
+    grid-template-columns: rem(123) 1fr;
+    gap: rem(8);
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: math.div(20, 12);
+    padding: rem(24) 0px 0px 0px;
+
+    // .table-product__label
+    &__label {
+        color: rgb(108, 114, 117);
+    }
+
+    // .table-product__value
+    &__value {
+        color: rgb(20, 23, 24);
+    }
+}
+
+//========================================================================================================================================================
+
+.rating {
+
+    // .rating_set
+    &_set {
+        align-items: center;
+        gap: rem(10);
+
+    }
+
+    // .rating__body
+    &__body {}
+
+    // .rating__active
+    &__active {}
+
+    // .rating__items
+    &__items {}
+
+    // .rating__item
+    &__item {}
+
+    // .rating__value
+    &__value {}
+
+    // .rating__info
+    &__info {
+        font-size: rem(12);
+        line-height: math.div(20, 12);
+        font-weight: 400;
+        color: rgb(20, 23, 24);
+        cursor: pointer;
+    }
+}
+
+.offer {
+    &:not(:last-child) {
+        margin-bottom: rem(48);
+    }
+
+    // .offer__title
+    &__title {
+        font-weight: 400;
+        line-height: math.div(26, 16);
+        color: rgb(52, 56, 57);
+
+        &:not(:last-child) {
+            margin-bottom: rem(12);
+        }
+    }
+
+    // .offer__timer
+    &__timer {}
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    padding: 0px 0px 0px rem(10);
+
+    // .timer__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: rem(11);
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .timer__time
+    &__time {
+        font-family: "Poppins";
+        font-size: rem(34);
+        line-height: math.div(38, 34);
+        color: rgb(20, 23, 24);
+        letter-spacing: rem(0.6);
+    }
+
+    // .timer__days
+    &__days {}
+
+    // .timer__hours
+    &__hours {}
+
+    // .timer__minutes
+    &__minutes {}
+
+    // .timer__seconds
+    &__seconds {}
+
+    // .timer__text
+    &__text {
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: math.div(20, 12);
+        color: rgb(108, 114, 117);
+    }
+}
+
+.size {
+    &:not(:last-child) {
+        margin-bottom: rem(24);
+    }
+
+    // .size__title
+    &__title {
+        font-weight: 600;
+        line-height: math.div(26, 16);
+
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+    }
+
+    // .size__info
+    &__info {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: math.div(32, 20);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.color {
+    &:not(:last-child) {
+        margin-bottom: rem(56);
+    }
+
+    // .color__title
+    &__title {
+        font-weight: 600;
+        line-height: math.div(26, 16);
+        color: rgb(108, 114, 117);
+        display: flex;
+        align-items: center;
+        gap: rem(4);
+
+        &:not(:last-child) {
+            margin-bottom: rem(8);
+        }
+    }
+
+    // .color__text
+    &__text {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: math.div(32, 20);
+        color: rgb(0, 0, 0);
+    }
+
+    // .color__body
+    &__body {
+        display: flex;
+        gap: rem(16);
+    }
+
+    // .color__item
+    &__item {
+        cursor: pointer;
+        position: relative;
+
+        &_active {
+            &::before {
+                content: '';
+                position: absolute;
+                top: rem(3);
+                left: 0;
+                right: 0;
+                bottom: rem(-3);
+                border: 1px solid #000;
+                pointer-events: none; // Чтобы псевдоэлемент не перекрывал другие элементы
+            }
+        }
+    }
+}
+
+.quantity {
+    margin: 0px rem(24) 0px 0px;
+
+    // .quantity__button
+    &__button {
+
+        // .quantity__button_minus
+        &_minus {}
+
+        // .quantity__button_plus
+        &_plus {}
+    }
+
+    // .quantity__input
+    &__input {}
+}
+
+//========================================================================================================================================================
+.product {
+
+    // .product__other
+    &__other {}
+}
+
+.other {
+
+    // .other__block
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: rem(48);
+        }
+    }
+
+    // .other__list
+    &__list {
+        display: flex;
+        gap: rem(80);
+        border-bottom: 1px solid rgb(128, 126, 126);
+    }
+
+    // .other__item
+    &__item {}
+
+    // .other__button
+    &__button {
+        &_active {
+            border-bottom: 1px solid rgb(18, 18, 18);
+        }
+    }
+
+    // .other__link
+    &__link {
+        font-size: rem(18);
+        line-height: math.div(32, 18);
+        letter-spacing: rem(-0.4);
+        color: rgb(128, 126, 126);
+
+        &_active {
+            color: rgb(18, 18, 18);
+        }
+    }
+
+    // .other__inner
+    &__inner {}
+
+    // .other__title
+    &__title {
+        font-family: "Poppins";
+        font-size: rem(28);
+        line-height: math.div(34, 28);
+        letter-spacing: rem(-0.6);
+        color: rgb(35, 38, 47);
+        margin-bottom: rem(24);
+    }
+
+    // .other__rating
+    &__rating {
+        gap: rem(8);
+
+        &:not(:last-child) {
+            margin-bottom: rem(8);
+        }
+    }
+
+    // .other__info
+    &__rating-info {
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: math.div(20, 12);
+        color: rgb(20, 23, 24);
+    }
+
+    // .other__items
+    &__items {
+        gap: rem(4);
+    }
+
+    // .other__new-review
+    &__new-review {
+
+
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    // .other__form
+    &__form {
+        max-width: rem(1120);
+        max-height: rem(72);
+        display: flex;
+        padding: rem(16) rem(16) rem(16) rem(24);
+        align-items: center;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: rem(16);
+    }
+
+    // .other__input
+    &__input {
+        width: 83%;
+        height: rem(70);
+
+        &::placeholder {
+            font-weight: 400;
+            line-height: math.div(26, 16);
+            color: #000;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    // .other__form-button
+    &__form-button {
+        line-height: math.div(28, 16);
+        letter-spacing: rem(-0.4);
+        color: rgb(255, 255, 255);
+        padding: rem(6) rem(40);
+        background-color: rgb(20, 23, 24);
+        border-radius: rem(80);
+        white-space: nowrap;
+    }
+
+    // .other__reviews
+    &__reviews {}
+
+    // .other__info
+    &__info {
+        font-weight: 400;
+        line-height: math.div(26, 16);
+        color: rgb(0, 0, 0);
+        margin: 0px rem(8) rem(30) 0px;
+
+        span {
+            font-weight: 600;
+            color: rgb(35, 38, 47);
+        }
+    }
+}
+
+.reviews {
+
+    // .reviews__title
+    &__title {
+        font-family: "Poppins";
+        font-size: rem(28);
+        line-height: math.div(36, 28);
+        letter-spacing: rem(-0.6);
+        color: #000;
+
+        &:not(:last-child) {
+            margin-bottom: rem(47);
+        }
+    }
+
+    // .reviews__item
+    &__item {
+        display: flex;
+        gap: rem(40);
+        padding-bottom: rem(24);
+        margin-bottom: rem(24);
+        border-bottom: 1px solid gray;
+    }
+
+    // .reviews__inner
+    &__inner {}
+
+    // .reviews__avatar
+    &__avatar {}
+
+    // .reviews__info
+    &__info {
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: math.div(32, 20);
+        color: rgb(20, 23, 24);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .reviews__name
+    &__name {}
+
+    // .reviews__surname
+    &__surname {}
+
+    // .reviews__rating-list
+    &__rating-list {
+        display: flex;
+        gap: rem(4);
+
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    // .reviews__rating-item
+    &__rating-item {}
+
+    // .reviews__text
+    &__text {
+        font-weight: 400;
+        line-height: math.div(26, 16);
+        color: rgb(53, 57, 69);
+
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    // .reviews__buttons
+    &__buttons {
+        display: flex;
+        gap: rem(16);
+        font-size: rem(14);
+        line-height: math.div(20, 14);
+    }
+
+    // .reviews__time
+    &__time {
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+    }
+
+    // .reviews__button-text
+    &__button-text {
+        color: rgb(35, 38, 47);
+        font-weight: 600;
+    }
+}

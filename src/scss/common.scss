@@ -1,0 +1,30 @@
+// Заголовки, общие БЄМ блоки и проче...
+.breadcrumbs {
+
+    // .breadcrumbs__list
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(16);
+    }
+
+    // .breadcrumbs__item
+    &__item {
+        &::after {
+            content: '';
+            background: url('@img/svg/arrows/arrow-right-grey.svg') bottom no-repeat;
+            padding: 0px 0px 0px rem(9);
+            margin: 0px 0px 0px rem(9);
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
+
+    // .breadcrumbs__link
+    &__link {
+        color: rgb(108, 114, 117);
+    }
+}

@@ -1,148 +1,794 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
-	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Особенности проекта
-			</div>
-			<h2>Готовые страницы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Главная</a></li>
-				<li><a target="_blank" href="shop.html">Каталог</a></li>
-				<li><a target="_blank" href="product-card.html?id=1">Карточка товара</a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Спасибо за заказ!</h2>
-				<p>Буду рад (а) хорошему отзыву.</p>
-				<p>Обращайтесь еще!</p>
-			</div>
-			<div class="rootpage__contacts">
-				<h2>Мои контакты:</h2>
-				<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
-			</div>
-		</div>
-	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #5e5373;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #aaa768;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #ebe691;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
 
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #32b5a4;
-			
-		}
-		.rootpage__contacts a{
-			color: #ebe691;
-		}
-		.rootpage__tnx{
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<div class="main-block__slider swiper">
+							<div class="main-block__wrapper swiper-wrapper">
+								<div class="main-block__slide swiper-slide">
+									<img src="@img/mainblock/swiper/1.jpeg" alt="">
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<img src="@img/mainblock/swiper/1.jpeg" alt="">
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<img src="@img/mainblock/swiper/1.jpeg" alt="">
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<img src="@img/mainblock/swiper/1.jpeg" alt="">
+								</div>
+							</div>
+							<div class="main-block__control control-main-block">
+								<div class="control-main-block__nav">
+									<button class="swiper-button-prev control-main-block__prev">
+										<img src="@img/arrows/left.svg" alt="left">
+									</button>
+									<button class="swiper-button-next control-main-block__next">
+										<img src="@img/arrows/right.svg" alt="right">
+									</button>
+								</div>
+								<div class="control-main-block__dotts-wrapper">
+									<div class="control-main-block__dotts"></div>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__info info-main-block">
+							<div class="info-main-block__body">
+								<h1 class="info-main-block__title">
+									Simply Unique<span>/</span>
+									Simply Better<span>.</span>
+								</h1>
+								<p class="info-main-block__text"><span>3legant</span> is a gift & decorations store
+									based in HCMC,
+									Vietnam. Est since 2019. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__category category">
+				<div class="category__container">
+					<div class="category__item">
+						<div class="category__text text">
+							<h2 class="category__title">Living Room</h2>
+							<a href="" class="category__link">Shop Now
+								<img src="@img/svg/arrows/arrow-right.svg" alt="">
+							</a>
+						</div>
+						<div class="category__image">
+							<img src="@img/category/1.jpeg" alt="img">
+						</div>
+					</div>
+					<div class="category__wrapper">
+						<div class="category__item">
+							<div class="category__text">
+								<h2 class="category__title">Bedroom</h2>
+								<a href="" class="category__link">Shop Now
+									<img src="@img/svg/arrows/arrow-right.svg" alt="">
+								</a>
+							</div>
+							<div class="category__image">
+								<img src="@img/category/2.jpeg" alt="img">
+							</div>
+						</div>
+						<div class="category__item">
+							<div class="category__text">
+								<h2 class="category__title">Kitchen</h2>
+								<a href="" class="category__link">Shop Now
+									<img src="@img/svg/arrows/arrow-right.svg" alt="">
+								</a>
+							</div>
+							<div class="category__image">
+								<img src="@img/category/3.jpeg" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products products">
+				<div class="products__container">
+					<div class="products__body">
+						<h2 class="products__title">New
+							Arrivals</h2>
+						<a href="" class="products__link">More Products
+							<img src="@img/svg/arrows/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<div class="products__slider swiper">
+						<div class="products__wrapper swiper-wrapper">
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/1.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/2.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/3.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/4.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/5.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/6.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/7.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/8.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/9.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="products__slide swiper-slide">
+								<article class="products__card card-products">
+									<div class="card-products__promotion">
+										<span class="card-products__new">NEW</span>
+										<span class="card-products__sale">-50%</span>
+									</div>
+									<div class="card-products__buttons">
+										<button data-tippy-content="Add to wishlist" class="card-products__favorite">
+											<svg class="card-products__favoriteImg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.6924 3.91706C11.3055 4.28838 10.6945 4.28838 10.3076 3.91706L9.6152 3.2526C8.80477 2.47487 7.70994 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.88263 3.28979 10.8501 5.15176 12.4666C7.01532 14.0844 9.2434 15.1574 10.5746 15.7051C10.853 15.8196 11.147 15.8196 11.4254 15.7051C12.7566 15.1574 14.9847 14.0844 16.8482 12.4666C18.7102 10.85 20 8.88262 20 6.5C20 4.01472 17.9853 2 15.5 2C14.2901 2 13.1952 2.47487 12.3848 3.2526L11.6924 3.91706ZM11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z"
+													fill="rgb(108, 114, 117)" />
+										</button>
+										<button class="card-products__cart">
+											<svg class="card-products__add-img" fill="#fff" width="24" height="24"
+												viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="check-circle"
+												class="icon glyph">
+												<path
+													d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.71,8.71-5,5a1,1,0,0,1-1.42,0l-3-3a1,1,0,1,1,1.42-1.42L11,13.59l4.29-4.3a1,1,0,0,1,1.42,1.42Z">
+												</path>
+											</svg>
+											</svg>
+											<span class="card-products__cart-text">
+												Add to cart
+											</span>
+										</button>
+									</div>
+									<a href="" class="card-products__img">
+										<img src="@img/products/10.jpeg" alt="">
+									</a>
+									<div class="card-products__info">
+										<div class="rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div hidden class="rating__value">3.2</div>
+										</div>
+										<h6 href="" class="card-products__title">
+											<a href="" class="card-products__link-title">
+												Loveseat Sofa
+											</a>
+										</h6>
+										<div class="card-products__priceBlock">
+											<span class="card-products__price">$199.00</span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="card-products__scrollbar"></div>
+					</div>
+					<div class="page__benefits benefits">
+						<div class="benefits__container">
+							<div class="benefits__item">
+								<div class="benefits__image">
+									<img src="@img/svg/car.svg" alt="car">
+								</div>
+								<div class="benefits__body">
+									<h6 class="benefits__title">Free Shipping</h6>
+									<div class="benefits__text">Order above $200</div>
+								</div>
+							</div>
+							<div class="benefits__item">
+								<div class="benefits__image">
+									<img src="@img/svg/money.svg" alt="money">
+								</div>
+								<div class="benefits__body">
+									<h6 class="benefits__title">Money-back</h6>
+									<div class="benefits__text">30 days guarantee</div>
+								</div>
+							</div>
+							<div class="benefits__item">
+								<div class="benefits__image">
+									<img src="@img/svg/lock.svg" alt="lock">
+								</div>
+								<div class="benefits__body">
+									<h6 class="benefits__title">Secure Payments</h6>
+									<div class="benefits__text">Secured by Stripe</div>
+								</div>
+							</div>
+							<div class="benefits__item">
+								<div class="benefits__image">
+									<img src="@img/svg/phone.svg" alt="phone">
+								</div>
+								<div class="benefits__body">
+									<h6 class="benefits__title">24/7 Support</h6>
+									<div class="benefits__text">Phone and Email support</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__banner banner">
+				<div class="banner__container">
+					<div class="banner__image">
+						<img src="@img/banner/1.jpeg" alt="">
+					</div>
+					<div class="banner__body">
+						<p class="banner__sale">SALE UP TO 35% OFF</p>
+						<h2 class="banner__title">HUNDREDS of New lower prices!</h2>
+						<p class="banner__text">It’s more affordable than ever to give every room in your home a stylish
+							makeover</p>
+						<a href="" class="banner__link">Shop Now
+							<img src="@img/svg/arrows/arrow-right.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__articles articles">
+				<div class="articles__container">
+					<div class="articles__header">
+						<h3 class="articles__title">Articles</h3>
+						<a href="" class="articles__link">More Articles
+							<img src="@img/svg/arrows/arrow-right.svg" alt="">
+						</a>
+					</div>
+					<div class="articles__body">
+						<div class="articles__item article-item">
+							<div class="article-item__image">
+								<img src="@img/articles/1.jpeg" alt="">
+							</div>
+							<div class="article-item__body">
+								<a href="" class="article-item__title-link">7 ways to decor your home</a>
+								<a href="" class="article-item__more-link">Read More
+									<img src="@img/svg/arrows/arrow-right.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="articles__item article-item">
+							<div class="article-item__image">
+								<img src="@img/articles/2.jpeg" alt="">
+							</div>
+							<div class="article-item__body">
+								<a href="" class="article-item__title-link">Kitchen organization</a>
+								<a href="" class="article-item__more-link">Read More
+									<img src="@img/svg/arrows/arrow-right.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="articles__item article-item">
+							<div class="article-item__image">
+								<img src="@img/articles/3.jpeg" alt="">
+							</div>
+							<div class="article-item__body">
+								<a href="" class="article-item__title-link">Decor your bedroom</a>
+								<a href="" class="article-item__more-link">Read More
+									<img src="@img/svg/arrows/arrow-right.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__footer-form footer-form">
+				<div class="footer-form__container">
+					<div class="footer-form__body">
+						<h2 class="footer-form__title">Join Our Newsletter</h2>
+						<p class="footer-form__text">Sign up for deals, new products and promotions</p>
+					</div>
+					<form action="#" class="footer-form__form form">
+						<img class="form__icon" src="@img/svg/email-2.svg" alt="">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="email"
+							placeholder="Email address" class="form__input">
+						<button type="submit" class="form__button">Signup</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

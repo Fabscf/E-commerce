@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241126193457">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__offer offer-header">
+					<div class="offer-header__wrapper">
+						<div class="offer-header__body">
+							<img src="img/svg/coupon.svg" alt="coupon">
+							<span class="offer-header__text">30% off storewide — Limited time!</span>
+							<a href="shop.html" class="offer-header__link">Shop Now
+								<img src="img/svg/arrows/arrow-right-blue.svg" alt="arrow-right">
+							</a>
+
+						</div>
+						<div type="button" class="offer-header__close">
+							<img src="img/svg/close.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="header__container">
+
+					<div class="header__logo">
+						<div class="header__logo_body">
+							<div class="menu">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+								<nav class="menu__body"></nav>
+							</div>
+							<a href="home.html">
+								<img src="img/svg/logo.svg" alt="logo">
+							</a>
+						</div>
+
+					</div>
+					<nav data-da=".menu__body, 767.98" class="header__menu menu-header">
+						<ul class="menu-header__list">
+							<li class="menu-header__item">
+								<a href="home.html" class="menu-header__link" id="home-link">Home</a>
+							</li>
+							<li class="menu-header__item">
+								<a href="shop.html" class="menu-header__link" id="shop-link">Shop</a>
+							</li>
+							<li class="menu-header__item">
+								<a href="product-card.html?id=1" class="menu-header__link" id="product-link">Product</a>
+							</li>
+							<li class="menu-header__item">
+								<a href="contact-about.html" class="menu-header__link" id="contact-link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+					<div data-da=".menu__body, 767.98" class="header__footer footer-header">
+						<div class="footer-header__body">
+							<div class="footer-header__cart-wish wish-cart">
+								<div class="wish-cart__body">
+									<div class="wish-cart__item" id="header-cart">
+										<a href="" class="wish-cart__link">
+											<span class="wish-cart__text">Cart</span>
+											<div class="wish-cart__img">
+												<img src="img/svg/cart.svg" alt="cart">
+												<span class="wish-cart__cart-count">0</span>
+											</div>
+										</a>
+									</div>
+									<div class="wish-cart__item" id="header-wish">
+										<a href="" class="wish-cart__link">
+											<span class="wish-cart__text wish-cart__text_wish">Wishlist</span>
+											<div class="wish-cart__img">
+												<img src="img/svg/favorite.svg" alt="favorite">
+												<span class="wish-cart__wish-count">0</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="footer-header__sign sign">
+								<button data-popup="#user" class="sign__button">Sign In</button>
+							</div>
+							<div class="footer-header__social social">
+								<ul class="social__list">
+									<li class="social__item">
+										<a href="" class="social__link">
+											<img src="img/svg/social/instagram.svg" alt="instagram">
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="" class="social__link">
+											<img src="img/svg/social/facebook.svg" alt="facebook">
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="" class="social__link">
+											<img src="img/svg/social/youtube.svg" alt="youtube">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="header__body">
+						<div class="header__search search">
+							<button class="search__button">
+								<img src="img/svg/search.svg" alt="search">
+							</button>
+							<form class="search__form">
+								<input autocomplete="on" type="text" name="form[]" placeholder="Site search" class="search__input" id="search-input">
+							</form>
+						</div>
+						<div data-popup="#user" class="header__user">
+							<img src="img/svg/user.svg" alt="user">
+						</div>
+						<div visible class="header__cart" id="header-cart">
+							<img src="img/svg/cart.svg" alt="cart">
+							<span class="header__cart-count">0</span>
+						</div>
+						<div class="header__cart-burger burger-cart">
+							<div class="burger-cart__body">
+								<div class="burger-cart__inner">
+									<div class="burger-cart__block">
+										<div class="burger-cart__top">
+											<h4 class="burger-cart__title">Cart</h4>
+											<div class="burger-cart__close">
+												<img src="img/svg/close.svg" alt="close cart">
+											</div>
+										</div>
+										<div class="burger-cart__items">
+
+										</div>
+									</div>
+									<div class="burger-cart__footer-block">
+										<div class="burger-cart__footer-info">
+											<div class="burger-cart__subtotal">
+												<span class="burger-cart__subtotal-text">Subtotal</span>
+												<span class="burger-cart__subtotal-price">$0.00</span>
+											</div>
+											<div class="burger-cart__total">
+												<span class="burger-cart__total-text">Total</span>
+												<span class="burger-cart__total-price">$0.00</span>
+											</div>
+										</div>
+										<div class="burger-cart__buttons">
+											<a class="burger-cart__check-out" href="cart.html">Checkout</a>
+											<a class="burger-cart__view-cart" href="cart.html">View Cart</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__about about">
+				<div class="about__container">
+					<div class="about__inner">
+						<h1 class="about__title">
+							We believe in sustainable decor. We’re passionate about life at home.
+						</h1>
+						<h6 class="about__subtitle">Our features timeless furniture, with natural fabrics, curved lines,
+							plenty of mirrors and classic design, which can be incorporated into any decor project. The
+							pieces enchant for their sobriety, to last for generations, faithful to the shapes of each
+							period, with a touch of the present
+						</h6>
+						<div class="about__banner banner-about">
+							<div class="banner-about__inner">
+								<div class="banner-about__img">
+									<picture><source srcset="img/contact-about/about-image.webp" type="image/webp"><img src="img/contact-about/about-image.png" alt=""></picture>
+								</div>
+								<div class="banner-about__right">
+									<h3 class="banner-about__title">About Us</h3>
+									<p class="banner-about__text">3legant is a gift & decorations store based in HCMC,
+										Vietnam. Est since 2019.
+										Our customer service is always prepared to support you 24/7</p>
+									<a href="" class="banner-about__button">Shop Now <img src="img/svg/arrows/arrow-right.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="about__contact">
+							<div class="contact__inner">
+								<h2 class="contact__title">Contact Us</h2>
+								<div class="contact__articles articles-contact">
+									<div class="articles-contact__items">
+										<div class="articles-contact__item contact-articles-item">
+											<div class="contact-articles-item__img">
+												<img src="img/contact-about/articles-about/1.svg" alt="">
+											</div>
+											<div class="contact-articles-item__name">Address</div>
+											<div class="contact-articles-item__info">
+												<a class="contact-articles-item__link" href="https://yandex.ru/maps/-/CDdgMF0e" target="_blank">234 Hai
+													Trieu, Ho Chi Minh
+													City,
+													Viet Nam</a>
+											</div>
+										</div>
+										<div class="articles-contact__item contact-articles-item">
+											<div class="contact-articles-item__img">
+												<img src="img/contact-about/articles-about/2.svg" alt="">
+											</div>
+											<div class="contact-articles-item__name">Contact Us</div>
+											<div class="contact-articles-item__info"><a class="contact-articles-item__link" href="tel:+84234567890">+84
+													234 567 890</a></div>
+										</div>
+										<div class="articles-contact__item contact-articles-item">
+											<div class="contact-articles-item__img">
+												<img src="img/contact-about/articles-about/3.svg" alt="">
+											</div>
+											<div class="contact-articles-item__name">Email</div>
+											<div class="contact-articles-item__info"><a class="contact-articles-item__link" href="mailto:hello@3legant.com">hello@3legant.com</a></div>
+										</div>
+									</div>
+								</div>
+								<div class="about__body">
+									<form class="about__form form-about" action="#">
+										<label class="form-about__label">Full Name</label>
+										<div class="form-about__input-body">
+											<input type="text" name="form[]" placeholder="Your Name" class="form-about__input">
+										</div>
+										<label class="form-about__label">Email address</label>
+										<div class="form-about__input-body">
+											<input autocomplete="off" type="email" name="form[]" placeholder="Your Email" class="form-about__input">
+										</div>
+										<label class="form-about__label">message</label>
+										<div class="form-about__input-body form-about__body-msg">
+											<input autocomplete="off" type="text" name="form[]" placeholder="Your message" class="form-about__input">
+										</div>
+										<button type="submit" class="form-about__button"><span>Send
+												Message</span></button>
+									</form>
+									<div class="about__map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.96990009223208!2d106.70438503502352!3d10.771550823410113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f84666425a3%3A0x5fe555146fe21fc0!2sSeedcom%20Corp.%20Office!5e0!3m2!1sru!2suk!4v1729627924927!5m2!1sru!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page__benefits benefits" style="background-color: rgb(243, 245, 247);">
+							<div class="benefits__container" style="max-width: 1920px;">
+								<div class="benefits__item">
+									<div class="benefits__image">
+										<img src="img/svg/car.svg" alt="car">
+									</div>
+									<div class="benefits__body">
+										<h6 class="benefits__title">Free Shipping</h6>
+										<div class="benefits__text">Order above $200</div>
+									</div>
+								</div>
+								<div class="benefits__item">
+									<div class="benefits__image">
+										<img src="img/svg/money.svg" alt="money">
+									</div>
+									<div class="benefits__body">
+										<h6 class="benefits__title">Money-back</h6>
+										<div class="benefits__text">30 days guarantee</div>
+									</div>
+								</div>
+								<div class="benefits__item">
+									<div class="benefits__image">
+										<img src="img/svg/lock.svg" alt="lock">
+									</div>
+									<div class="benefits__body">
+										<h6 class="benefits__title">Secure Payments</h6>
+										<div class="benefits__text">Secured by Stripe</div>
+									</div>
+								</div>
+								<div class="benefits__item">
+									<div class="benefits__image">
+										<img src="img/svg/phone.svg" alt="phone">
+									</div>
+									<div class="benefits__body">
+										<h6 class="benefits__title">24/7 Support</h6>
+										<div class="benefits__text">Phone and Email support</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<svg width="105.000000" height="26.527344" viewBox="0 0 105 26.5273" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<defs />
+							<path id="3legant." d="M2.59 4.29Q1.87 5.34 1.77 6.82L4.43 6.82Q4.51 6.29 4.75 5.85Q4.97 5.45 5.32 5.13Q5.35 5.11 5.37 5.09Q6.11 4.44 7.41 4.44Q8.78 4.44 9.52 5.12Q9.52 5.13 9.53 5.13Q9.75 5.33 9.9 5.57Q10.27 6.15 10.27 6.96Q10.27 7.79 9.88 8.34Q9.64 8.69 9.24 8.93Q8.22 9.55 6.29 9.58L5.63 9.58L5.63 11.83L6.26 11.83Q8.46 11.83 9.53 12.54Q9.77 12.7 9.95 12.9Q10.6 13.62 10.6 14.93Q10.6 15.83 10.21 16.49Q10.05 16.77 9.81 17.01Q9.73 17.09 9.65 17.16Q8.87 17.81 7.56 17.81Q6.18 17.81 5.32 17.14Q5.23 17.08 5.15 17.01Q4.82 16.7 4.59 16.33Q4.23 15.72 4.17 14.93L1.53 14.93Q1.62 16.75 2.52 17.95Q2.86 18.4 3.31 18.76Q3.46 18.87 3.6 18.98Q5.21 20.09 7.58 20.09Q9.36 20.09 10.63 19.46Q11.68 18.93 12.3 18.09Q12.43 17.91 12.54 17.72Q12.65 17.53 12.74 17.34Q13.19 16.37 13.19 15.2Q13.19 13.42 12.4 12.28Q12.13 11.88 11.77 11.57Q11.11 10.99 10.19 10.71L10.19 10.61Q10.38 10.55 10.57 10.46Q11.44 10.07 12.09 9.2Q12.26 8.98 12.39 8.74Q12.88 7.83 12.88 6.65Q12.88 5.67 12.53 4.85Q12.41 4.58 12.26 4.32Q12.17 4.19 12.08 4.06Q11.47 3.21 10.41 2.69Q9.19 2.09 7.51 2.09Q5.25 2.09 3.74 3.15Q3.61 3.24 3.48 3.34Q2.95 3.76 2.59 4.29ZM19.17 20L19.17 2.24L16.43 2.24L16.43 20L19.17 20ZM88.89 16.32L88.89 9L92.11 9L92.11 6.77L88.89 6.77L88.89 3.48L86.13 3.48L86.13 6.77L84.57 6.77L84.57 9L86.13 9L86.13 16.32Q86.13 18.24 87.08 19.11Q87.1 19.12 87.12 19.13Q88.1 20 89.95 20L92.11 20L92.11 17.72L90.43 17.72Q89.59 17.72 89.24 17.39Q88.89 17.07 88.89 16.32ZM34.79 14.41Q34.89 13.8 34.89 13.06Q34.89 11.19 34.12 9.75Q34.1 9.71 34.07 9.66Q33.65 8.9 33.05 8.31Q32.5 7.76 31.79 7.37Q31.65 7.29 31.51 7.22Q30.15 6.55 28.46 6.55Q26.61 6.55 25.16 7.32Q25.09 7.36 25.01 7.4Q24.36 7.76 23.84 8.26Q23.15 8.91 22.69 9.78Q21.86 11.33 21.86 13.37Q21.86 15.41 22.71 16.96Q23.2 17.85 23.9 18.51Q24.42 19 25.06 19.36Q25.27 19.48 25.49 19.58Q26.83 20.21 28.46 20.21Q30.59 20.21 32.09 19.24Q32.23 19.15 32.36 19.05Q33.23 18.41 33.8 17.56Q34.26 16.88 34.53 16.06L31.58 16.06Q31.18 16.87 30.53 17.33Q29.7 17.91 28.46 17.91Q27.49 17.91 26.7 17.52Q26.25 17.3 25.86 16.95Q25.54 16.65 25.3 16.29Q24.77 15.5 24.69 14.41L34.79 14.41ZM45.63 7.17Q44.45 6.55 42.91 6.55Q41.82 6.55 40.85 6.89Q40.28 7.09 39.75 7.41Q39.27 7.69 38.86 8.06Q38.04 8.77 37.5 9.79Q36.67 11.33 36.67 13.32Q36.67 15.25 37.44 16.79Q37.47 16.84 37.5 16.89Q38.07 17.98 38.94 18.74Q39.32 19.07 39.75 19.34Q40.31 19.68 40.92 19.89Q41.86 20.21 42.91 20.21Q44.39 20.21 45.55 19.61Q45.58 19.59 45.61 19.58Q46.79 18.94 47.49 18L47.49 20.21Q47.49 22.01 46.6 23.01Q46.54 23.08 46.47 23.14Q46.21 23.4 45.91 23.59Q45.03 24.15 43.79 24.15Q42.38 24.15 41.36 23.51L41.36 23.51Q40.64 23.07 40.28 22.42Q40.12 22.15 40.03 21.84L37.31 21.84Q37.43 22.92 37.94 23.77Q38.44 24.63 39.33 25.26Q41.11 26.52 43.79 26.52Q45.81 26.52 47.26 25.71Q48.11 25.23 48.73 24.55Q49.16 24.06 49.48 23.46Q49.51 23.41 49.54 23.36Q50.25 21.97 50.25 20.21L50.25 6.77L47.49 6.77L47.49 8.69Q46.82 7.78 45.63 7.17ZM53.77 9.79Q52.94 11.33 52.94 13.32Q52.94 15.25 53.72 16.79Q53.74 16.84 53.77 16.89Q54.36 18.02 55.27 18.79Q55.62 19.09 56.01 19.34Q56.62 19.72 57.29 19.93Q58.16 20.21 59.13 20.21Q60.66 20.21 61.87 19.59Q63.07 18.96 63.76 18.03L63.76 20L66.52 20L66.52 6.77L63.76 6.77L63.76 8.69Q63.07 7.78 61.9 7.17Q60.74 6.55 59.18 6.55Q58.09 6.55 57.13 6.89Q56.55 7.09 56.02 7.41Q55.54 7.69 55.13 8.06Q54.32 8.77 53.77 9.79ZM79.47 7.14Q78.28 6.55 76.8 6.55Q75.97 6.55 75.21 6.78Q74.89 6.87 74.58 7.01Q73.7 7.39 73.08 8.03Q72.97 8.15 72.86 8.28L72.86 6.77L70.12 6.77L70.12 20L72.86 20L72.86 12.6Q72.86 10.85 73.73 9.91Q73.74 9.89 73.75 9.88Q73.98 9.64 74.25 9.46Q75.05 8.93 76.19 8.93Q77.36 8.93 78.15 9.48Q78.41 9.65 78.62 9.88Q78.62 9.89 78.63 9.89Q79.51 10.84 79.51 12.6L79.51 20L82.22 20L82.22 12.2Q82.22 10.4 81.52 9.13Q81.09 8.33 80.44 7.77Q80.05 7.45 79.59 7.2Q79.53 7.17 79.47 7.14ZM31.61 10.55Q32.02 11.26 32.03 12.2L24.72 12.2Q24.86 11.02 25.49 10.22Q25.68 9.97 25.92 9.76Q26.34 9.38 26.82 9.16Q27.51 8.86 28.34 8.86Q29.48 8.86 30.34 9.34Q30.67 9.52 30.96 9.77Q31.36 10.12 31.61 10.55ZM46.92 11Q47.49 12 47.49 13.37Q47.49 14.74 46.92 15.76Q46.46 16.61 45.75 17.11Q45.6 17.22 45.45 17.31Q45.01 17.56 44.53 17.69Q44.03 17.83 43.48 17.83Q43.11 17.83 42.75 17.76Q42.12 17.64 41.53 17.29Q41.35 17.19 41.19 17.07Q40.49 16.56 40.04 15.72Q39.48 14.69 39.48 13.32Q39.48 11.96 40.04 10.96Q40.48 10.17 41.15 9.68Q41.33 9.56 41.52 9.45Q41.95 9.2 42.43 9.07Q42.94 8.93 43.48 8.93Q44.03 8.93 44.53 9.07Q45.01 9.2 45.45 9.46Q45.62 9.56 45.78 9.68Q46.47 10.18 46.92 11ZM63.2 11Q63.76 12 63.76 13.37Q63.76 14.74 63.2 15.76Q62.73 16.61 62.02 17.11Q61.87 17.22 61.72 17.31Q61.28 17.56 60.81 17.69Q60.3 17.83 59.76 17.83Q59.38 17.83 59.03 17.76Q58.39 17.64 57.8 17.29Q57.62 17.19 57.46 17.07Q56.77 16.56 56.31 15.72Q55.75 14.69 55.75 13.32Q55.75 11.96 56.31 10.96Q56.76 10.17 57.42 9.68Q57.6 9.56 57.79 9.45Q58.23 9.2 58.7 9.07Q59.21 8.93 59.76 8.93Q60.3 8.93 60.81 9.07Q61.28 9.2 61.72 9.46Q61.89 9.56 62.06 9.68Q62.74 10.18 63.2 11Z" fill="#fff" fill-opacity="1.000000" fill-rule="evenodd" />
+							<path id="3legant." d="M94.96 20Q95.31 20.16 95.73 20.16Q96.09 20.16 96.4 20.04Q96.7 19.91 96.95 19.66Q97.17 19.44 97.3 19.17Q97.46 18.83 97.46 18.41Q97.46 17.99 97.3 17.65Q97.17 17.39 96.95 17.16Q96.7 16.92 96.4 16.79Q96.09 16.66 95.73 16.66Q95.31 16.66 94.96 16.83Q94.7 16.95 94.49 17.16Q94.27 17.38 94.15 17.64Q93.98 17.99 93.98 18.41Q93.98 18.84 94.15 19.19Q94.27 19.45 94.49 19.66Q94.7 19.88 94.96 20Z" fill="#6C7275" fill-opacity="1.000000" fill-rule="evenodd" />
+						</svg>
+						<span class="footer__logo-text">
+							Gift & Decoration Store
+						</span>
+					</div>
+					<div class="footer__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Shop</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Product</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__info">
+					<div class="footer__legal footer-legal">
+						<ul class="footer-legal__list">
+							<li class="footer-legal__item">
+								<a href="" class="footer-legal__link">Copyright &copy; 2023 3legant. All rights reserve</a>
+							</li>
+							<li class="footer-legal__item">
+								<a href="" class="footer-legal__link footer-legal__link_white">Privacy Policy</a>
+							</li>
+							<li class="footer-legal__item">
+								<a href="" class="footer-legal__link footer-legal__link_white">Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__social footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__item">
+								<a href="" class="footer-social__link">
+									<img src="img/svg/social/instagram_white.svg" alt="instagram">
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="" class="footer-social__link">
+									<img src="img/svg/social/facebook_white.svg" alt="facebook">
+								</a>
+							</li>
+							<li class="footer-social__item">
+								<a href="" class="footer-social__link">
+									<img src="img/svg/social/youtube_white.svg" alt="youtube">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="user" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Тут будет регистрация/вход!
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cart" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Тут будет корзина!
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20241126193457"></script>
+</body>
+
+
+</html>

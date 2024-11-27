@@ -29,12 +29,15 @@ import { sprite } from "./config/gulp-tasks/sprite.js";
 import { gitignore } from "./config/gulp-tasks/gitignore.js";
 import { otfToTtf, ttfToWoff, fonstStyle } from "./config/gulp-tasks/fonts.js";
 
-// Последовательная обработака шрифтов
+// Импорт задачи для обработки JSON-файлов
+import { json } from "./config/gulp-tasks/json.js";
+
+// Последовательная обработка шрифтов
 const fonts = gulp.series(reset, otfToTtf, ttfToWoff, fonstStyle);
+
 // Основные задачи будем выполнять параллельно после обработки шрифтов
 const devTasks = gulp.parallel(fonts, gitignore);
-// Основные задачи будем выполнять параллельно после обработки шрифтов
-const buildTasks = gulp.series(fonts, jsDev, js, gulp.parallel(html, css, images, gitignore));
+const buildTasks = gulp.series(fonts, jsDev, js, gulp.parallel(html, css, images, json, gitignore));
 
 // Экспорт задач
 export { html }
@@ -46,6 +49,7 @@ export { fonts }
 export { sprite }
 export { ftp }
 export { zip }
+export { json } // Экспортируем задачу для JSON
 
 // Построение сценариев выполнения задач
 const development = gulp.series(devTasks);
@@ -61,6 +65,7 @@ export { deployZIP }
 
 // Выполнение сценария по умолчанию
 gulp.task('default', development);
+
 
 
 

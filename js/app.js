@@ -649,7 +649,7 @@
         async function getProducts() {
             try {
                 if (!productsData.length) {
-                    const res = await fetch("../data/products.json");
+                    const res = await fetch("data/products.json");
                     if (!res.ok) throw new Error(res.statusText);
                     productsData = await res.json();
                 }
@@ -3229,7 +3229,7 @@
         async function generationCards_getProducts() {
             try {
                 if (!generationCards_productsData.length) {
-                    const res = await fetch("../data/products.json");
+                    const res = await fetch("data/products.json");
                     if (!res.ok) throw new Error(res.statusText);
                     generationCards_productsData = await res.json();
                 }
@@ -3457,7 +3457,7 @@
         async function getReviews() {
             try {
                 if (!reviewsData.length) {
-                    const res = await fetch("../data/reviews.json");
+                    const res = await fetch("data/reviews.json");
                     if (!res.ok) throw new Error(res.statusText);
                     reviewsData = await res.json();
                 }
@@ -7596,7 +7596,7 @@
         async function generationCard_getProducts() {
             try {
                 if (!generationCard_productsData.length) {
-                    const res = await fetch("../data/products.json");
+                    const res = await fetch("data/products.json");
                     if (!res.ok) throw new Error(res.statusText);
                     generationCard_productsData = await res.json();
                 }
@@ -7850,7 +7850,7 @@
         async function cart_getProducts() {
             try {
                 if (!cart_productsData.length) {
-                    const res = await fetch("../data/products.json");
+                    const res = await fetch("data/products.json");
                     if (!res.ok) throw new Error(res.statusText);
                     cart_productsData = await res.json();
                 }

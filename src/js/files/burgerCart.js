@@ -27,7 +27,7 @@ async function getProducts() {
     try {
 
         if (!productsData.length) {
-            const res = await fetch('../data/products.json');
+            const res = await fetch('data/products.json');
             if (!res.ok) {
                 throw new Error(res.statusText)
             }

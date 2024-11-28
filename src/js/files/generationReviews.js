@@ -5,7 +5,7 @@ getReviews();
 async function getReviews() {
 	try {
 		if (!reviewsData.length) {
-			const res = await fetch('data/reviews.json');
+			const res = await fetch('/E-commerce/data/reviews.json');
 			if (!res.ok) {
 				throw new Error(res.statusText);
 			}

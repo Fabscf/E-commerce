@@ -19,7 +19,7 @@
             "red",
             "grey"
         ],
-        "image": "../../img/products/1.jpeg"
+        "image": "/E-commerce/img/products/1.jpeg"
     },
     {
         "id": 2,
@@ -39,7 +39,7 @@
             "white",
             "red"
         ],
-        "image": "../../img/products/2.jpeg"
+        "image": "/E-commerce/img/products/2.jpeg"
     },
     {
         "id": 3,
@@ -50,12 +50,12 @@
         "category": "Kitchen",
         "articul": 5223,
         "color": [
-            "../../img/product/black.png"
+            "/E-commerce/img/product/black.png"
         ],
         "dataColor": [
             "black"
         ],
-        "image": "../../img/products/3.jpeg"
+        "image": "/E-commerce/img/products/3.jpeg"
     },
     {
         "id": 4,
@@ -66,14 +66,14 @@
         "category": "Bathroom",
         "articul": 4022,
         "color": [
-            "../../img/product/black.png",
-            "../../img/product/grey.png"
+            "/E-commerce/img/product/black.png",
+            "/E-commerce/img/product/grey.png"
         ],
         "dataColor": [
             "black",
             "grey"
         ],
-        "image": "../../img/products/4.jpeg"
+        "image": "/E-commerce/img/products/4.jpeg"
     },
     {
         "id": 5,
@@ -91,7 +91,7 @@
             "red",
             "grey"
         ],
-        "image": "../../img/products/5.jpeg"
+        "image": "/E-commerce/img/products/5.jpeg"
     },
     {
         "id": 6,
@@ -107,7 +107,7 @@
         "dataColor": [
             "grey"
         ],
-        "image": "../../img/products/6.jpeg"
+        "image": "/E-commerce/img/products/6.jpeg"
     },
     {
         "id": 7,
@@ -129,7 +129,7 @@
             "red",
             "grey"
         ],
-        "image": "../../img/products/7.jpeg"
+        "image": "/E-commerce/img/products/7.jpeg"
     },
     {
         "id": 8,
@@ -145,7 +145,7 @@
         "dataColor": [
             "black"
         ],
-        "image": "../../img/products/8.jpeg"
+        "image": "/E-commerce/img/products/8.jpeg"
     },
     {
         "id": 9,
@@ -163,6 +163,6 @@
             "red",
             "grey"
         ],
-        "image": "../../img/products/9.jpeg"
+        "image": "/E-commerce/img/products/9.jpeg"
     }
 ]

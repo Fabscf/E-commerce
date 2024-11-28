@@ -14,8 +14,7 @@ export const path = {
 		css: `${buildFolder}/css/`,
 		images: `${buildFolder}/img/`,
 		fonts: `${buildFolder}/fonts/`,
-		products: `${buildFolder}/data/products.json`,
-		reviews: `${buildFolder}/data/reviews.json`,
+		json: `${buildFolder}/data/`, // Папка назначения для JSON
 		files: `${buildFolder}/files/`,
 	},
 	src: {
@@ -26,17 +25,17 @@ export const path = {
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
 		svg: `${srcFolder}/img/**/*.svg`,
 		fonts: `${srcFolder}/fonts/*.*`,
+		json: `${srcFolder}/data/**/*.json`, // Источник JSON
 		files: `${srcFolder}/files/**/*.*`,
 		svgicons: `${srcFolder}/svgicons/*.svg`,
-		products: `${buildFolder}/data/products.json`,
-		reviews: `${buildFolder}/data/reviews.json`,
 	},
 	clean: buildFolder,
 	buildFolder: buildFolder,
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
-	ftp: `` // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
+	ftp: ``,
 };
+
 
 // Настройка FTP соединения
 export const configFTP = {

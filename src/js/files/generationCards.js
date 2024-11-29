@@ -74,7 +74,7 @@ function generateCards(data) {
                         </span>
                     </button>
                 </div>
-                <a href="/E-commerce/product-card.html?id=${product.id}" class="card-products__img">
+                <a href="product-card.html?id=${product.id}" class="card-products__img">
                     <img src="${product.image}" alt="">
                 </a>
                 <div class="card-products__info">
@@ -94,7 +94,7 @@ function generateCards(data) {
                         </div>
                         <div class="card-products__main card-products__main_columns">
                             <h6 class="card-products__title">
-                                <a href="/E-commerce/product-card.html?id=${product.id}" class="card-products__link-title">
+                                <a href="product-card.html?id=${product.id}" class="card-products__link-title">
                                     ${product.title}
                                 </a>
                             </h6>

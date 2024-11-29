@@ -94,7 +94,7 @@ function generateCards(data) {
                         </div>
                         <div class="card-products__main card-products__main_columns">
                             <h6 class="card-products__title">
-                                <a href="E-commerce/product-card.html?id=${product.id}" class="card-products__link-title">
+                                <a href="/E-commerce/product-card.html?id=${product.id}" class="card-products__link-title">
                                     ${product.title}
                                 </a>
                             </h6>

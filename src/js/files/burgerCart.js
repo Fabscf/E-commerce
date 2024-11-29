@@ -236,7 +236,7 @@ function generateItems(arr) {
     <div class="item-cart__right-block">
         <div class="item-cart__price"><span>${item.post}</span></div>
         <div class="item-cart__delete">
-            <img src="../../img/svg/close-item-cart.svg" alt="">
+            <img src="/E-commerce/img/svg/close-item-cart.svg" alt="">
         </div>
     </div>
 </div>

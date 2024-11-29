@@ -43,19 +43,19 @@ function generateReviews(data) {
 									</div>
 									<ul class="reviews__rating-list">
 										<li class="reviews__rating-item">
-											<img src="../../img/svg/star-rating.svg" alt="">
+											<img src="/E-commerce/img/svg/star-rating.svg" alt="">
 										</li>
 										<li class="reviews__rating-item">
-											<img src="../../img/svg/star-rating.svg" alt="">
+											<img src="/E-commerce/img/svg/star-rating.svg" alt="">
 										</li>
 										<li class="reviews__rating-item">
-											<img src="../../img/svg/star-rating.svg" alt="">
+											<img src="/E-commerce/img/svg/star-rating.svg" alt="">
 										</li>
 										<li class="reviews__rating-item">
-											<img src="../../img/svg/star-rating.svg" alt="">
+											<img src="/E-commerce/img/svg/star-rating.svg" alt="">
 										</li>
 										<li class="reviews__rating-item">
-											<img src="../../img/svg/star-rating.svg" alt="">
+											<img src="/E-commerce/img/svg/star-rating.svg" alt="">
 										</li>
 									</ul>
 									<div class="reviews__text">

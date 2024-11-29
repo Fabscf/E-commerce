@@ -194,10 +194,10 @@ function renderInfoProduct(product) {
                 </div>
                 <div class="control-block__nav">
                     <button class="swiper-button-prev control-block__prev">
-                        <img src="../../img/arrows/left.svg" alt="left">
+                        <img src="/E-commerce/img/arrows/left.svg" alt="left">
                     </button>
                     <button class="swiper-button-next control-block__next">
-                        <img src="../../img/arrows/right.svg" alt="right">
+                        <img src="/E-commerce/img/arrows/right.svg" alt="right">
                     </button>
                 </div>
                 <div class="product__thumbs thumbs-images swiper">

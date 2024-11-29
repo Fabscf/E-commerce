@@ -8,10 +8,10 @@
         "category": "Living Room",
         "articul": 9179,
         "color": [
-            "../../img/product/black.png",
-            "../../img/product/white.png",
-            "../../img/product/red.png",
-            "../../img/product/grey.png"
+            "/E-commerce/img/product/black.png",
+            "/E-commerce/img/product/white.png",
+            "/E-commerce/img/product/red.png",
+            "/E-commerce/img/product/grey.png"
         ],
         "dataColor": [
             "black",
@@ -30,9 +30,9 @@
         "category": "Bedroom",
         "articul": 3076,
         "color": [
-            "../../img/product/black.png",
-            "../../img/product/white.png",
-            "../../img/product/red.png"
+            "/E-commerce/img/product/black.png",
+            "/E-commerce/img/product/white.png",
+            "/E-commerce/img/product/red.png"
         ],
         "dataColor": [
             "black",
@@ -84,8 +84,8 @@
         "category": "Dinning",
         "articul": 1419,
         "color": [
-            "../../img/product/red.png",
-            "../../img/product/grey.png"
+            "/E-commerce/img/product/red.png",
+            "/E-commerce/img/product/grey.png"
         ],
         "dataColor": [
             "red",
@@ -102,7 +102,7 @@
         "category": "Outdoor",
         "articul": 5582,
         "color": [
-            "../../img/product/grey.png"
+            "/E-commerce/img/product/grey.png"
         ],
         "dataColor": [
             "grey"
@@ -118,10 +118,10 @@
         "category": "Outdoor",
         "articul": 5081,
         "color": [
-            "../../img/product/black.png",
-            "../../img/product/white.png",
-            "../../img/product/red.png",
-            "../../img/product/grey.png"
+            "/E-commerce/img/product/black.png",
+            "/E-commerce/img/product/white.png",
+            "/E-commerce/img/product/red.png",
+            "/E-commerce/img/product/grey.png"
         ],
         "dataColor": [
             "black",
@@ -140,7 +140,7 @@
         "category": "Outdoor",
         "articul": 5257,
         "color": [
-            "../../img/product/black.png"
+            "/E-commerce/img/product/black.png"
         ],
         "dataColor": [
             "black"
@@ -156,8 +156,8 @@
         "category": "Outdoor",
         "articul": 7231,
         "color": [
-            "../../img/product/red.png",
-            "../../img/product/grey.png"
+            "/E-commerce/img/product/red.png",
+            "/E-commerce/img/product/grey.png"
         ],
         "dataColor": [
             "red",

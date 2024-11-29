@@ -251,7 +251,7 @@ function generateItems1(arr) {
                         <div class="item-body__color-body">Color: <span
                             class="item-body__color">${formattedColor}</span></div>
                         <button type="button" class="item-body__button">
-                            <img src="../../img/svg/close-item-cart.svg" alt="remove">
+                            <img src="/E-commerce/img/svg/close-item-cart.svg" alt="remove">
                                 Remove</button>
                     </div>
                 </div>

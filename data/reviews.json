@@ -1,26 +1,26 @@
 [
     {
-        "avatar": "../img/reviews/avatars/1.jpeg",
+        "avatar": "/E-commerce/img/reviews/avatars/1.jpeg",
         "name": "Sofia",
         "surname": "Harvetz"
     },
     {
-        "avatar": "../img/reviews/avatars/2.jpeg",
+        "avatar": "/E-commerce/img/reviews/avatars/2.jpeg",
         "name": "Nicolas",
         "surname": "Jensen"
     },
     {
-        "avatar": "../img/reviews/avatars/3.jpeg",
+        "avatar": "/E-commerce/img/reviews/avatars/3.jpeg",
         "name": "Nicolas",
         "surname": "Jensen"
     },
     {
-        "avatar": "../img/reviews/avatars/4.jpeg",
+        "avatar": "/E-commerce/img/reviews/avatars/4.jpeg",
         "name": "Nicolas",
         "surname": "Jensen"
     },
     {
-        "avatar": "../img/reviews/avatars/5.jpeg",
+        "avatar": "/E-commerce/img/reviews/avatars/5.jpeg",
         "name": "Nicolas",
         "surname": "Jensen"
     }

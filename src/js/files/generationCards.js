@@ -74,7 +74,7 @@ function generateCards(data) {
                         </span>
                     </button>
                 </div>
-                <a href="/product-card.html?id=${product.id}" class="card-products__img">
+                <a href="/E-commerce/product-card.html?id=${product.id}" class="card-products__img">
                     <img src="${product.image}" alt="">
                 </a>
                 <div class="card-products__info">
